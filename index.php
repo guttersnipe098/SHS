@@ -125,7 +125,7 @@ function nextQ() {
 	}
 }
 </script>
-<div id="q">Question #1<br/><?=$file[0][0]?></div>
+<div id="q">Question #1<br/><?php echo $file[0][0]?></div>
 <br/><br/>
 <div id="a">&nbsp;</div>
 <div id="b"><input type="button" value="Show Answer" onclick="showAnswer()"/></div>
