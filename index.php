@@ -102,7 +102,7 @@ function markIncorrect() {
 	nextQ();
 }
 function nextQ() {
-	if (pos<<? echo sizeof($file)?>) {
+	if (pos < <?php echo sizeof($file)?>) {
 		pos++;
 		document.getElementById("b").innerHTML=sa;
 		document.getElementById("a").innerHTML='&nbsp;';
