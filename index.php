@@ -55,13 +55,13 @@ unset( $file[ sizeof($file)-1 ] );
 for ($i=0;$i<sizeof($file);$i++) {
 	$file[$i]=explode(":",$file[$i]);
 }
-#$iSentinal=sizeof($file)*2;
-#$num=0;
-#for ($i=sizeof($file);$i<$iSentinal;$i++) {
-	#$file[$i][0]=$file[$num][1];
-	#$file[$i][1]=$file[$num][0];
-	#$num++;
-#}
+$iSentinal=sizeof($file)*2;
+$num=0;
+for ($i=sizeof($file);$i<$iSentinal;$i++) {
+	$file[$i][0]=$file[$num][1];
+	$file[$i][1]=$file[$num][0];
+	$num++;
+}
 shuffle($file);
 ?>
 <script type="text/javascript">
